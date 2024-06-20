@@ -44,3 +44,10 @@ for video in $VIDEO_IDS; do
     ego4d --output_directory=$OUTPUT --dataset full_scale --video_uids $video -y
 done
 ```
+
+## Download the Files to Own Server
+- Move the files to `/var/www/html` directory
+- Download the file
+```sh
+wget http://{my_vultr_ip}/{file_name}
+```
