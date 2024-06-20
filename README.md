@@ -35,6 +35,8 @@ pip install ego4d
 - Upload a json file containing all the video_uids
 - Run the download scripts
 ```sh
+#! /bin/bash
+
 JSON="E4D_video_ids.json"
 VIDEO_IDS=$(jq -r '.[]' $JSON)
 OUTPUT="ego4d_data"
